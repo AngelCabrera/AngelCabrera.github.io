@@ -170,11 +170,21 @@
           <v-col v-for="item in projects" :key="item.title">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-card class="mx-auto" max-width="344">
+                <v-card class="mx-auto h-100" max-width="344">
                   <v-img :src="item.image"></v-img>
                   <v-card-text>
                     <h2 class="title primary--text">{{ item.title }}</h2>
                     {{ item.description }}
+                    <div>
+                      <v-chip
+                        v-for="(technology, index) in item.technologies"
+                        class="mt-3 mx-1"
+                        color="primary"
+                        :key="`${technology} ${index}`"
+                      >
+                        {{ technology }}
+                      </v-chip>
+                    </div>
                   </v-card-text>
 
                   <v-fade-transition>
@@ -265,44 +275,50 @@ export default {
       {
         title: 'The Futures',
         description:
-          'Sition Web desarrollado en Laravel y Vue. The Futures es una empresa que brinda servicios de diseño gráfico a otras empresas.',
+          'The Futures es una empresa que brinda servicios de diseño gráfico a otras empresas.',
+        technologies: ['Vue', 'Bootrap', 'Laravel', 'Mysql'],
         url: 'https://thefutures.io',
         image: '/thefutures.png',
       },
       {
         title: 'Limbo',
         description:
-          'Plataforma realizada con React.js. Limbo conecta a las personas interesadas en alquilar una vivienda o apartamento',
+          'Limbo conecta a las personas interesadas en alquilar una vivienda o apartamento',
         url: 'https://limbo.olimpoo.vercel.app/',
         image: '/limbo.png',
+        technologies: ['React', 'React Router', 'Bootstrap'],
       },
       {
         title: 'PooExchange',
         description:
-          'Plataforma realizada con Vue.js y Tailwind. PooExchange muestra información en tiempo real sobre las 20 criptomonedas mejor valoradas',
+          'PooExchange muestra información en tiempo real sobre las 20 criptomonedas mejor valoradas',
         url: 'https://pooexchange.netlify.app/',
         image: '/pooexchange.png',
+        technologies: ['Vue', 'Tailwind', 'Consumo de APIs'],
       },
       {
         title: 'Diablo 3 Profile Finder',
         description:
-          'Plataforma realizada con Vue.js, Vuex, Vue Router y Bootstrap. Esta aplicación se conecta con la API de diablo 3 para ofrecerte información detallada en tiempo real de tu cuenta, tus puntuaciones y personajes.',
+          'Esta aplicación se conecta con la API de diablo 3 para ofrecerte información detallada en tiempo real de tu cuenta, tus puntuaciones y personajes.',
         url: 'https://diablo3finder.netlify.app/',
         image: '/diablo3.png',
+        technologies: ['Vue', 'Vuex', 'Bootstrap', 'Consumo de APIs'],
       },
       {
         title: 'Olimpoo Rooms',
         description:
-          'Plataforma realizada con Firebase, Vue.js, Vuex, Vue Router. Esta aplicación permite, a personas interesadas en alquilar o vender una  propiedad, crar una cuenta y poder publicar sus ofertas',
+          'Esta aplicación permite, a personas interesadas en alquilar o vender una  propiedad, crar una cuenta y poder publicar sus ofertas',
         url: 'https://rentalrooms.netlify.app/',
         image: '/rentalrooms.png',
+        technologies: ['Vue', 'Vuex', 'Tailwind', 'Firebase'],
       },
       {
         title: 'Pomodoro Clock',
         description:
-          'Aplicación realizada con React.js. Esta aplicación consiste en un reloj inspirado en la técnica pomodoro que te permite gestionar tu productividad.',
+          'Esta aplicación consiste en un reloj inspirado en la técnica pomodoro que te permite gestionar tu productividad.',
         url: 'https://rentalrooms.netlify.app/',
         image: '/pomodoro.png',
+        technologies: ['React'],
       },
     ],
     certifications: [
@@ -406,6 +422,10 @@ export default {
   border: 1px solid rgba(0, 0, 0, 0.72);
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 @media screen and (min-width: 960px) {
