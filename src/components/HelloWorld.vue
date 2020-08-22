@@ -27,22 +27,22 @@
           <v-col class="bigger-font text-justify">
             <p>
               Soy un apasionado por la tecnología y creación de productos
-              digitales. Amante de los desafíos, nuevos proyectos y del
+              digitales, amante de los desafíos, nuevos proyectos y del
               aprendizaje continuo.
             </p>
             <p>
               Mi trabajo está enfocado a la excelencia, el diálogo y la
               honestidad, garantizando un servicio de calidad y el cumplimiento
-              de todos los objetivos acordados con cada cliente.
+              de todos los objetivos acordados.
+            </p>
+            <p id="projects">
+              Puedo sumar a tus ideas para llegar a un resultado sorprendente.
+              Para saber cómo puedo ayudarte con tu proyecto, dame un saludo y
+              te responderé rápidamente.
             </p>
             <p>
               Mi trabajo solo se completa cuando el cliente está 100% satisfecho
               con el servicio recibido.
-            </p>
-            <p id="projects">
-              Ciertamente puedo sumar a sus ideas para llegar a un resultado
-              sorprendente. Para saber cómo puedo ayudarte con tu proyecto, dame
-              un saludo y te responderé rápidamente.
             </p>
           </v-col>
         </v-row>
@@ -313,12 +313,11 @@ export default {
         technologies: ['Vue', 'Vuex', 'Bootstrap', 'Consumo de APIs'],
       },
       {
-        title: 'Pomodoro Clock',
-        description:
-          'Esta aplicación consiste en un reloj inspirado en la técnica pomodoro que te permite gestionar tu productividad.',
-        url: 'https://rentalrooms.netlify.app/',
-        image: '/pomodoro.png',
-        technologies: ['React'],
+        title: 'Fitness Video',
+        description: 'Concepto de homepage de aplicación para videos fitness',
+        url: 'https://codepen.io/angelcabrera/full/YzKRrwb',
+        image: '/fitness.png',
+        technologies: ['HTML', 'CSS'],
       },
     ],
     certifications: [
