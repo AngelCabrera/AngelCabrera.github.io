@@ -275,10 +275,18 @@ export default {
       {
         title: 'The Futures',
         description:
-          'The Futures es una empresa que brinda servicios de diseño gráfico a otras empresas.',
+          'The Futures brinda servicios de diseño gráfico a otras empresas con entregas en menos de 24 horas.',
         technologies: ['Vue', 'Bootrap', 'Laravel', 'Mysql'],
         url: 'https://thefutures.io',
         image: '/thefutures.png',
+      },
+      {
+        title: 'Getaround',
+        description:
+          'Esta aplicación permite, a personas interesadas en alquilar o vender una  propiedad, poder publicar sus ofertas',
+        url: 'https://getaround.netlify.app/',
+        image: '/rentalrooms.png',
+        technologies: ['Vue', 'Vuex', 'Tailwind', 'Firebase'],
       },
       {
         title: 'Limbo',
@@ -303,14 +311,6 @@ export default {
         url: 'https://diablo3finder.netlify.app/',
         image: '/diablo3.png',
         technologies: ['Vue', 'Vuex', 'Bootstrap', 'Consumo de APIs'],
-      },
-      {
-        title: 'Olimpoo Rooms',
-        description:
-          'Esta aplicación permite, a personas interesadas en alquilar o vender una  propiedad, crar una cuenta y poder publicar sus ofertas',
-        url: 'https://rentalrooms.netlify.app/',
-        image: '/rentalrooms.png',
-        technologies: ['Vue', 'Vuex', 'Tailwind', 'Firebase'],
       },
       {
         title: 'Pomodoro Clock',
