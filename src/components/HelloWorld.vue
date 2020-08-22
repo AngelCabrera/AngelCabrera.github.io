@@ -310,7 +310,7 @@ export default {
           'Esta aplicación se conecta con la API de diablo 3 para ofrecerte información detallada en tiempo real de tu cuenta, tus puntuaciones y personajes.',
         url: 'https://diablo3finder.netlify.app/',
         image: '/diablo3.png',
-        technologies: ['Vue', 'Vuex', 'Bootstrap', 'Consumo de APIs'],
+        technologies: ['Vue', 'Vuex', 'Bootstrap', 'API'],
       },
       {
         title: 'Fitness Video',
