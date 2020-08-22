@@ -3,7 +3,7 @@
     <v-app-bar app color="#fff" style="z-index: 999;">
       <div class="d-flex align-center mx-auto">
         <v-avatar class="mr-2">
-          <img :src="require('./assets/avatar.png')" alt="John" />
+          <img :src="require('./assets/avatar.png')" alt="Angel Cabrera" />
         </v-avatar>
         <h2>
           Ángel Cabrera
